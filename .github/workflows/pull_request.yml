@@ -1,5 +1,7 @@
 name: pull-reqeust-workflow
-on: pull_request
+on: 
+  pull_request:
+    types: [opened]
 
 jobs:
   pull-reqeust-job:
@@ -10,4 +12,4 @@ jobs:
     - name: step2
       run: |
         echo hello world
-        echo github action
+        echo github action 
